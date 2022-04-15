@@ -12,7 +12,7 @@ def write_task(q):
 def read_task(q):
     time.sleep(1)                      # 休眠1秒
     while not q.empty():
-        print("读取:%s" % q.get(True,2))     # 等待2秒，如果还没读取到任何消息，
+        print("读取:%s" % q.get(True,2))     # 等待2秒，如果还没读取到任何消息
                                            # 则抛出"Queue.Empty"异常
 
 if __name__ == "__main__":

@@ -19,7 +19,7 @@ def  child_2(interval):
 
 if __name__ == '__main__':
     print("------父进程开始执行-------")
-    print("父进程PID：%s" % os.getpid())                  # 输出当前程序的ID
+    print("父进程PID：%s" % os.getpid())                    # 输出当前程序的ID
     p1=Process(target=child_1,args=(1,))                    # 实例化进程p1
     p2=Process(target=child_2,name="mrsoft",args=(2,))     # 实例化进程p2
     p1.start()  # 启动进程p1

@@ -3,7 +3,7 @@ import random,threading,time
 
 # 生产者类
 class Producer(threading.Thread):
-    def __init__(self, name,queue):
+    def __init__(self, name, queue):
         threading.Thread.__init__(self, name=name)
         self.data=queue
     def run(self):

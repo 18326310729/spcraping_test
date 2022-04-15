@@ -88,7 +88,7 @@ if __name__ == '__main__':
     pool.map(s.get_info, info_urls)
     # 记录结束时间
     info_end_time = time.time()
-    print('爬取电影详情信息耗时：', info_end_time - info_start_time)
+    print('爬取电影详情信息耗时1：', info_end_time - info_start_time)
     # 将爬取电影的详细信息保存至excel文件中
     s.df.to_excel('movie_info.xlsx')
 
